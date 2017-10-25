@@ -23,4 +23,4 @@ script:
 - sfdx force:apex:test:run -u ciorg -c -r human
 - sfdx force:org:delete -u ciorg -p
 - sfdx force:source:convert -d ./mdapiPackage/
-- ant -Daction=push -denvPush=erik -DpPath=./mdapiPackage/
+- ant deploy
